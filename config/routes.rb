@@ -4,8 +4,9 @@ SocialProdigy::Application.routes.draw do
   # Welcome message
   root    :to => 'application#welcome'
   # Student
-  resource :student
+  # resource :student
   post    'student/details' => 'student#create_or_update'
+  get 	  'students/friend_count' => 'student#get_friends_count'
   # Dummy data
   get 	  'dummy/student' => 'dummy#student'
 end

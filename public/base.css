@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* A Little Reset */
+body, html, ul, h2, h3, h4, p {
+	padding: 0;
+	margin: 0;
+}
+
+/* User Page */
+.container-content {
+	min-height: 920px;
+	min-width: 980px;
+	background: transparent url(frontEnd.png) no-repeat center top;
+	position: relative;
+}
+.container-footer {
+	height: 247px;
+	min-width: 980px;
+	background: transparent url(footer.png) no-repeat center center;
+}
+.container-form {
+	position: absolute;
+	width: 590px;
+    top: 245px;
+    left: 50%;
+    margin: 0 0 0 -135px;
+}
+.container-form h3 {
+    border-bottom: thin solid #CFCFCF;
+    font-size: 18px;
+    margin: 30px 0 10px;
+    color: #ED822C;
+    font-family: "Rokkitt",serif;
+    font-weight: normal;
+}
+.container-form p {
+    color: #64767F;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 15px 0;
+}
+.container-form .holder .label {
+    clear: left;
+    margin-top: 10px;
+    width: 200px;
+    color: #022F45;
+    float: left;
+    font-size: 13px;
+    margin-right: 20px;
+    text-align: right;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.container-form .holder .input {
+    border: 1px solid #B7B7B7;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin: 1px 0 2px;
+    padding: 5px;
+    width: 246px;
+    display: inline-block;
+}
+.input.twitter {
+	height: 28px;
+}
+.input.linkedIn {
+	height: 31px;
+}
+.container-form #submit-form.indented {
+    display: block;
+    margin-left: 220px;
+}
+.container-form #submit-form input.submit-to-finish {
+    background: none repeat scroll 0 0 #219DDA;
+    border-bottom: 1px solid #3E7B99 !important;
+    border-left: medium none;
+    border-radius: 2px 2px 2px 2px;
+    border-right: medium none;
+    border-top: medium none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    margin: 20px 0 0;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.container-form #submit-form input.submit-to-finish:hover {
+    background: none repeat scroll 0 0 #1792CE;
+    border: medium none;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    height: 32px;
+    padding: 6px 8px;
+    width: inherit;
+}
+
+/* Admin Page */
+.admin-content {
+	min-height: 962px;
+	min-width: 980px;
+	background: transparent url(adminBack.png) no-repeat center top;
+	position: relative;
+}
+.admin-form {
+	height: 300px;
+	position: absolute;
+	width: 304px;
+    top: 534px;
+    left: 50%;
+    margin: 0 0 0 -153px;
+}
+
+.admin-content {
+    background: url("adminBack.png") no-repeat scroll center top transparent;
+    min-height: 1075px;
+    min-width: 980px;
+    position: relative;
+}
+
+.block .block_head {
+    background-color: #EFEFEF;
+    border: thin solid #CCCCCC;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 30px;
+    line-height: 31px;
+    overflow: hidden;
+    padding: 0 15px;
+    line-height: 31px;
+}
+.block .block_head h2 {
+    color: #1D4D64;
+    float: left;
+    font-family: 'Arial',serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: uppercase;
+}
+.block h3 {
+    border-bottom: thin solid #CFCFCF;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    color: #ED822C;
+    font-family: "Rokkitt",serif;
+    font-weight: normal;
+}
+.block h4 {
+    color: #1D4D64;
+    float: left;
+    font-family: 'Arial',serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: uppercase;
+	margin: 10px 0 0 5px;
+}
+.block .block_head ul {
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Arial",Verdana,sans-serif;
+}
+.block .block_head ul li.nobg {
+    background: none repeat scroll 0 0 transparent;
+    display: inline;
+    padding: 3px 0 3px 20px;
+    list-style: none outside none;
+}
+.block .block_head ul li a {
+    color: #666666;
+    outline: medium none;
+    text-decoration: none;
+}
+.block .block_head ul li a:hover {
+    color: #008ee8;
+}
+.block .block_content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+	border-top: none;
+    overflow: auto;
+    padding: 5px;
+    font-family: "Arial",Verdana,sans-serif;
+    font-size: 13px;
+    color: #666666;
+    line-height: 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.block table {
+	width: 100%;
+	padding: 0 0 0 6px;
+}
+.block table tr th {
+	width: 150px;
+	font-weight: normal;
+}
+.block table tr td, .block table tr th {
+    border-bottom: 1px solid #DDDDDD;
+    line-height: normal;
+    padding: 4px;
+    text-align: left;
+	font-size: 13px;
+    font-family: "Arial",Verdana,sans-serif;
+}
