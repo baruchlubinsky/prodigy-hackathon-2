@@ -8,7 +8,7 @@ There are static pages contained in the `public` folder that demonstrate how the
 End-Points
 ==
 
-The API only reached the proof-of-concept stage. As such the end-points which are implimented serve as examples of how the API could work.
+The API only reached the proof-of-concept stage. As such the end-points which are implimented serve as examples of how the API could work. Student records are identified by an e-mail address. In an actual implimentation, we would have access to the real student record in the Prodigy system.
 
 A student record is created by POSTing to `students/details`. This is used to store social media credentials in a database.
 
