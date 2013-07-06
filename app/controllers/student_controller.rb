@@ -1,5 +1,5 @@
 class StudentController < ApplicationController
-	before_filter: :require_admin, only: ['index', 'show']
+	before_filter :require_admin, only: ['index', 'show']
 	def create
 		@student = Student.new(params[:student])
 		if @student.save
@@ -29,5 +29,16 @@ class StudentController < ApplicationController
 		@student = Student.find(params[:id])
 		@student.delete
 		render json: {success: 'Destroyed'}, status: 200
+	end
+	def create_or_update
+		begin
+			@student = Student.find_by(email: params[:email])
+		rescue Mongoid::Errors::DocumentNotFound
+			@student = Student.create(email: params[:email])
+			@student.save
+		end
+		@student.update_attributes(params[:student])
+		@student.save
+		render json: {success: 'saved details'}, status: 201
 	end
 end
